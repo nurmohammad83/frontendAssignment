@@ -1,16 +1,31 @@
-import { ADDED, DELETED } from "./actionType"
+import { ADDED, UPDATED, UPDATE_TODO } from "./actionType"
 
-export const added = (todoText)=>{
+export const addTodo = (todoText) => {
     return {
-        type:ADDED,
-        payload:todoText
+        type: ADDED,
+        payload: todoText,
+    };
+};
+export const upadateTodo =(todo)=>{
+    return {
+        type:UPDATED,
+        payload:todo
     }
 }
 
-
-export const deleted = (todoId)=>{
+export const allUpdateTodo = (todoId, updatedTodo) => {
     return {
-        type:DELETED,
-        payload:id
-    }
-}
+      type: UPDATE_TODO,
+      payload: {
+        todoId,
+        updatedTodo
+      }
+    };
+  };
+  
+// export const deleted = (todoId) => {
+//     return {
+//         type: DELETED,
+//         payload: todoId,
+//     };
+// };

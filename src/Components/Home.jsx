@@ -2,9 +2,11 @@ import LeftSideBar from "./LeftSideBar";
 import MainContent from './MainContent'
 import RightSideBar from "./RightSideBar";
 import victor from '../assets/Wallet.png'
+
 const Home = () => {
+ 
   return (
-    <section className="bg-black h-[calc(100vh - 98px)]">
+    <section className="bg-black min-h-[calc(100vh - 98px)]">
       <div className="flex">
         {/* Right Side */}
         <div className="w-[251px] text-white lsideH border-[#dbe1f5] border-r-2">

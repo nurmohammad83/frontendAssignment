@@ -6,7 +6,7 @@ import lang from '../assets/Language.png'
 
 const LeftSideBar = () => {
     return (
-        <div className="px-3 pb-6 flex flex-col justify-between h-full">
+        <div className="px-3 pb-6 flex flex-col justify-between min-h-full">
            <div>
            <div className='flex mt-2 justify-between items-center p-5'>
                 <div className='flex justify-center items-center gap-x-2'>
