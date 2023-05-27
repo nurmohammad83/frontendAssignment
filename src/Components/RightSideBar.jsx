@@ -32,7 +32,6 @@ const updateTodo = { id,title:updateTitle,des:updateDes}
           type="text"
           placeholder="Carrot"
           name='title'
-          required
           defaultValue={title}
           onChange={(e) => setUpdateTitle(e.target.value)}
           className="text-[20px] w-full px-3 text-[#808191] bg-[#242731] border-none outline-none rounded-lg font-semibold"
@@ -41,7 +40,6 @@ const updateTodo = { id,title:updateTitle,des:updateDes}
           className="w-full rounded-lg px-3 border-none mt-2 bg-[#242731] text-sm text-[#808191]"
           placeholder="Carrot improves eyesight."
           rows="8"
-          required
           defaultValue={des}
           name='des'
           onChange={(e) => setUpdateDes(e.target.value)}
